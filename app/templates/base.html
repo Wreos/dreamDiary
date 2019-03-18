@@ -1,0 +1,17 @@
+<html>
+<head>
+    {% if title %}
+    <title> {{ title }} - DreamDiary</title>
+    {% else %}
+    <title> Добро пожаловать в DreamDiary</title>
+    {% endif %}
+</head>
+    <body>
+    <div> DreamDiary:
+        <a href="/index">Домашняя</a>
+    <a href="/login">Войти</a>
+    </div>
+    <hr>
+    {% block content %} {% endblock %}
+    </body>
+</html>
